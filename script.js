@@ -8,13 +8,12 @@ const range = document.querySelector("#range");
 const circle = document.querySelector("#circle");
 const span = document.querySelector("#range-span");
 
-const colorSwitcer = function (e) {
+const colorSwitcer = function () {
   btn.addEventListener("click", function () {
-    square.style.backgroundColor = e.target.value;
+    square.style.backgroundColor = input.value;
   });
 };
-
-input.addEventListener("input", colorSwitcer);
+colorSwitcer();
 
 eBtn.style = "display: none";
 
